@@ -1,0 +1,49 @@
+﻿@page "/"
+@using Microsoft.AspNetCore.Components.Authorization
+
+@inject AuthService AuthService
+@inject NavigationManager NavigationManager
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<AuthorizeView>
+    <Authorizing>
+        <p>Authorizing...</p>
+    </Authorizing>
+    <NotAuthorized>
+        <p class="text-danger">Not Authorized</p>
+    </NotAuthorized>
+    <Authorized>
+        <h3>Hi @context.User.Identity!.Name</h3>
+        <p class="text-succes">User is Authorized</p>
+    </Authorized>
+</AuthorizeView>
+
+<div class="mb-5">
+    <form method="post" @onsubmit="LoginAsGuest" @formname="a">
+        <button type="submit" class=" btn btn-sm btn-primary">Login as Guest</button>
+    </form>
+</div>
+<form method="post" @onsubmit="LoginAsAdmin" @formname="b">
+    <button type="submit" class=" btn btn-sm btn-info">Login as Admin</button>
+</form>
+
+@code {
+    [CascadingParameter]
+    public HttpContext HttpContext { get; set; }
+
+    private async Task LoginAsGuest()
+    {
+        await AuthService.LoginAsGuest(HttpContext);
+        NavigationManager.Refresh();
+    }
+    private async Task LoginAsAdmin()
+    {
+        await AuthService.LoginAsAdmin(HttpContext);
+        NavigationManager.Refresh();
+    }
+}

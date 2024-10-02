@@ -1,0 +1,10 @@
+﻿@page "/only-guest"
+@using Microsoft.AspNetCore.Authorization
+
+@attribute [Authorize(Roles = Constants.Roles.Guest)]
+
+<h3>OnlyGuest</h3>
+
+@code {
+
+}

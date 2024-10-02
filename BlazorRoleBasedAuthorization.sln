@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorRoleBasedAuthorization", "BlazorRoleBasedAuthorization\BlazorRoleBasedAuthorization.csproj", "{49095703-8E87-493B-A273-BA939C9498A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorRoleBasedAuthorizationWASM", "BlazorRoleBasedAuthorizationWASM\BlazorRoleBasedAuthorizationWASM.csproj", "{9F3D1961-E67C-4AE2-8B7F-FA351529AF0E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49095703-8E87-493B-A273-BA939C9498A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49095703-8E87-493B-A273-BA939C9498A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49095703-8E87-493B-A273-BA939C9498A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49095703-8E87-493B-A273-BA939C9498A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F3D1961-E67C-4AE2-8B7F-FA351529AF0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F3D1961-E67C-4AE2-8B7F-FA351529AF0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F3D1961-E67C-4AE2-8B7F-FA351529AF0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F3D1961-E67C-4AE2-8B7F-FA351529AF0E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C333D00E-DB92-4B0E-B061-D7586F5CD31F}
+	EndGlobalSection
+EndGlobal

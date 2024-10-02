@@ -1,0 +1,10 @@
+﻿@page "/only-admin"
+@using Microsoft.AspNetCore.Authorization
+
+@attribute [Authorize(Roles = Constants.Roles.Admin)]
+
+<h3>OnlyAdmin</h3>
+
+@code {
+
+}
